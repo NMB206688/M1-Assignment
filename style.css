@@ -1,0 +1,74 @@
+header
+{
+    background: url(images/dog3.jpg) 0 -200px no-repeat;
+    background-size: 100%;
+    height: 250px;
+    padding-top: 150px;
+    padding-left: 300px;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(19, 17, 17);
+}
+li
+{
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+    font-weight: bold;
+}
+li a
+{
+    text-decoration: none;    /* Remove Underline*/
+}
+li a:link
+{
+    color: #000; /* Before Click */
+}
+li a:visited
+{
+    color: #818db3; /* After Click */
+}
+li a:hover
+{
+    color: #333; /*Mouse Over*/
+}
+li a:active
+{
+    color: #753a30; /* Mouse Down */
+}
+nav
+{
+    background-color: rgb(245, 227, 215);
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+}
+main 
+{
+    margin: 50px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 35px;
+    background-size: 100%;
+    
+}
+main h1
+{
+    color: rgb(104, 104, 105);
+    font-family: arial;
+    font-style: italic;
+    font-size: 30px;
+    height: 400px;
+}
+
+
+footer
+{
+    height: 40px;
+    background-color: rgb(245, 227, 215);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(247, 40, 12);
+    font-weight: bold;
+}
