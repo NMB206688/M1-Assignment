@@ -8,7 +8,9 @@ header
     font-weight: bold;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(19, 17, 17);
+    color: rgb(19, 17, 17); 
+      
+    
 }
 li
 {
@@ -17,7 +19,7 @@ li
     padding: 0 20px;
     font-weight: bold;
 }
-li a
+li a 
 {
     text-decoration: none;    /* Remove Underline*/
 }
@@ -37,9 +39,10 @@ li a:active
 {
     color: #753a30; /* Mouse Down */
 }
+
 nav
 {
-    background-color: rgb(245, 227, 215);
+    background-color: rgb(255, 245, 238);
     height: 50px;
     text-align: center;
     padding-top: 2px;
@@ -47,25 +50,15 @@ nav
 main 
 {
     margin: 50px;
-    height: 200px;
-    padding-top: 50px;
-    padding-left: 35px;
-    background-size: 100%;
-    
 }
 main h1
 {
-    color: rgb(104, 104, 105);
+    color: rgb(129, 141, 179);
     font-family: arial;
-    font-style: italic;
-    font-size: 30px;
-    height: 400px;
 }
-/* About.html Table design Starts Here */
 table 
 {
-    margin-top: 5px;  
-    
+    margin-top: 35px;
 }
 table, caption, th, td{
     border: 1px solid #000;
@@ -84,18 +77,39 @@ caption
     color: #753a30;
 
 }
-/* About.html Table design Starts Ends */
-
-/*Contact.html Form design Starts*/
-
-/*Contact.html Form design Ends*/
-
+label
+{
+    display: block;
+    margin: 15px 0 0 0;
+}
+input
+{
+    width: 300px;
+}
+input[type="radio"]
+{
+    width: 25px;
+}
+textarea
+{
+    width: 500px;
+    background-color: reds;
+    padding: 12px 20px;
+    
+    
+}
+input[type="submit"]
+{
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100px;
+}
 footer
 {
     height: 40px;
-    background-color: rgb(245, 227, 215);
+    background-color: rgb(129, 141, 179);
     text-align: center;
     padding-top: 20px;
-    color: rgb(247, 40, 12);
+    color: rgb(211, 218, 240);
     font-weight: bold;
 }
