@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create an array with the filenames of the images
     const photos = [
         'dog5.jpg', 'dog6.jpg', 'dog7.jpg', 'dog8.jpg', 'dog9.jpg',
-        'dog10.jpg', 'dog11.jpg', 'dog12.jpg', 'dog13.jpg', 'dog4.jpg'
+        'dog10.jpg', 'dog11.jpg', 'dog12.jpg', 'dog13.jpg', 'dog4.jpg',
+        'dog3.jpg','dog2.jpg'
     ];
 
     // Loop through the array of photos
