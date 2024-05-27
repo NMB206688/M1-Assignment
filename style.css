@@ -47,9 +47,15 @@ nav
     text-align: center;
     padding-top: 2px;
 }
+#container
+{
+    width: 80%;
+    margin: 0 auto;
+}
 main 
 {
     margin: 50px;
+    
 }
 main h1
 {
@@ -104,6 +110,41 @@ input[type="submit"]
     margin: 20px 0 10px 0;
     width: 100px;
 }
+
+#gallery-main
+{
+    padding: 20px;
+}
+/* style.css */
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#gallery .photo {
+    width: 100%;
+    padding-top: 100%; /* This creates a square aspect ratio */
+    position: relative; /* Ensures the img is positioned correctly */
+}
+
+#gallery .photo img {
+    position: absolute; /* Positioning the img absolutely within its parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border: 10px solid white; /* Adds space around each image */
+    
+}
+
+
+
 footer
 {
     height: 40px;
