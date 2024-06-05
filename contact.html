@@ -4,23 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-        <title>Welcome to Mini_Site</title>   <!----title name is given here --->
+        <title>Welcome to Mini_Site</title>
         <link rel="stylesheet" href="style.css">
-
     </head>
     <body>
         <div id="container">
             <header>
                 "Adopt a dog and discover the unconditional love that changes everything."
             </header>
-            <nav>         <!-- nav section starts here -->
-
-                <ul>       <!---Using ul tag and li tag --->
-                    <li><a href="index.html">Home</a></li>    <!---Used "Anchor-tag" and "Bold-tag" for adding link to navigators -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-    
                 </ul>
             </nav>
             <main>
@@ -29,43 +26,35 @@
                         <legend>Fill Up the Form To Adopt Puppies</legend>
                         <label>Enter Your Full Name</label>
                         <input type="text" name="name">
-                        <label>Enter Your E-mail</label>
-                        <input type="email" name="name">
-                        <label>Enter Your Phone</label>
-                        <input type="text" name="name">
                         <label>Select Your Gender</label>
                         <input type="radio" name="gender" value="male"/>male
                         <input type="radio" name="gender" value="female"/>Female 
-                        <label>What type of Dog You Need</label>
-                        <select>
-                            <option>-- Select --</option>
-                            <option>German Shepard</option>
-                            <option>Bulldog</option>
-                            <option>Siberian Husky</option>
-                            <option>Alaskan Malamute</option>
-                            <option>Baegle</option>
-                            <option>Golden Retriever</option>
-                            <option>Labrodor Retriever</option>
-                            <option>Other</option>
-                        </select>
+                        
                         <label>How Should we Contact You?</label>
-                        <select>
-                            <option>Email</option>
-                            <option>Phone</option>
+                        <select id="contact-method">
+                            <option value="">Select an option</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
                         </select>
-                        <label>Tell Us the reason of Your Vist Today :</label> 
-                        <textarea ></textarea>
+
+                        <div id="email-box" class="contact-box">
+                            <label>Enter Your Address:</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div id="phone-box" class="contact-box">
+                            <label>Enter Your Phone Number:</label>
+                            <input type="tel" name="phone">
+                        </div>
+
+                        <label>Tell Us the reason of Your Visit Today :</label> 
+                        <textarea></textarea>
                         <input type="submit" value="sign-up">
-
-
                     </fieldset>
-                    
-
                 </form>
             </main>
-
         </div>
-        
-        <footer>Nimmi's Pets Adoption  &copy; 2024 Copy rights Reserved </footer>
+        <footer>Nimmi's Pets Adoption  &copy; 2024 Copy rights Reserved</footer>
+        <script src="JS/script.js"></script>
+        <script src="JS/contactscript.js"></script>
     </body>
-    </html>
+</html>

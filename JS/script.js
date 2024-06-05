@@ -42,3 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         gallery.appendChild(li);
     });
 });
+
+
+
+
