@@ -155,35 +155,49 @@ footer
     font-weight: bold;
 }
 
-/* Initially hide captions */
-.caption {
-    display: none;
-    cursor: pointer;
+/* CSS for the gallery list */
+#gallery {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Styling for the info box */
-#info-box {
-    position: fixed;
+#gallery li {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+#gallery li img {
+    display: block;
+}
+
+.caption {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.description {
+    visibility: hidden;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(17, 17, 17);
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    width: 80%;
+    box-sizing: border-box;
 }
 
-#info-box h2 {
-    margin: 0;
-    margin-bottom: 10px;
+.photo:hover .description {
+    visibility: visible;
 }
 
-#info-box a {
-    display: block;
-    margin-top: 20px;
-    color: rgb(19, 19, 248);
-    text-decoration: underline;
+.photo:hover {
     cursor: pointer;
 }

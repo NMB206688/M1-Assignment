@@ -21,15 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Array of additional information for each image
     const additionalInfo = [
-        'This is a cute dog #1.', 'This is a cute dog #2.', 'This is a cute dog #3.', 'This is a cute dog #4.', 'This is a cute dog #5.',
-        'This is a cute dog #6.', 'This is a cute dog #7.', 'This is a cute dog #8.', 'This is a cute dog #9.', 'This is a cute dog #10.',
-        'This is a cute dog #11.', 'This is a cute dog #12.'
+        'little puppy.', 'Husky Puppy', 'cutiee', 'Happy Dog Cuddling', 'labrodar cutie.',
+        'Vibing Dog', 'thug Dog', 'Look into my eyes Dear', 'Love Yourself', 'Whats up dogs',
+        'How Arer You', 'Choo Cuteeee'
     ];
 
-    // Loop through the array of photos
     photos.forEach((photo, index) => {
         // Create a new <li> element
         const li = document.createElement('li');
+        li.id = `photo${index + 1}`;
         li.className = 'photo';
         
         // Create a new <img> element
@@ -42,18 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
         caption.textContent = captions[index];
         caption.className = 'caption';
         
+        // Create a new <div> element for the description
+        const description = document.createElement('div');
+        description.textContent = additionalInfo[index];
+        description.className = 'description';
+        
         li.appendChild(img);
         li.appendChild(caption);
+        li.appendChild(description);
         gallery.appendChild(li);
         
-        img.addEventListener('mouseover', () => {
-            caption.style.display = 'block';
-        });
-
-        img.addEventListener('mouseout', () => {
-            caption.style.display = 'none';
-        });
-
         caption.addEventListener('click', () => {
             infoHeading.innerHTML = captions[index];
             infoText.innerHTML = additionalInfo[index];
