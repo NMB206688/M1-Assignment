@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Mini_Site</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div id="container">
@@ -28,6 +29,13 @@
             <p id="info-text"></p>
             <a href="#" id="info-close">Close</a>
         </div>
+        <!-- Lightbox Structure -->
+        <div id="lightbox" class="box" style="display: none;">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+            <div class="caption" id="lightbox-caption"></div>
+        </div>
+        <div id="backdrop" class="backdrop" style="display: none;"></div>
         <footer>Nimmi's Pets Adoption &copy; 2024 Copy rights Reserved</footer>
     </div>
     <script src="JS/script.js"></script>

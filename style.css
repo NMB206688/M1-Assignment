@@ -155,6 +155,7 @@ footer
     font-weight: bold;
 }
 
+
 /* CSS for the gallery list */
 #gallery {
     list-style-type: none; /* Remove default list style */
@@ -230,7 +231,63 @@ footer
 #info-close {
     display: block; /* Display as block element */
     text-align: center; /* Center align the link */
-    color: blue; /* Set the link color to blue */
+    color: rgb(252, 12, 12); /* Set the link color to blue */
     text-decoration: underline; /* Underline the link */
     cursor: pointer; /* Change cursor to pointer */
+}
+
+/* CSS for the lightbox */
+.box {
+    position: fixed; /* Position the lightbox fixed on the screen */
+    top: 50%; /* Center the lightbox vertically */
+    left: 50%; /* Center the lightbox horizontally */
+    transform: translate(-50%, -50%) scale(0.9); /* Translate to exact center and initially scale down */
+    z-index: 1001; /* Ensure the lightbox appears above other elements */
+    background-color: white; /* Set background color to white */
+    padding: 20px; /* Add padding to the lightbox */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Add a shadow to the lightbox */
+    border-radius: 10px; /* Add rounded corners to the lightbox */
+    text-align: center; /* Center align the content in the lightbox */
+    width: 80%; /* Set the width of the lightbox */
+    max-width: 90%; /* Set the maximum width of the lightbox */
+    max-height: 90%; /* Set the maximum height of the lightbox */
+    overflow: auto; /* Allow scrolling if content overflows */
+    transition: all 0.3s ease; /* Add a smooth transition for transformations */
+}
+
+.backdrop {
+    position: fixed; /* Position the backdrop fixed on the screen */
+    top: 0; /* Position the backdrop at the top of the screen */
+    left: 0; /* Position the backdrop at the left of the screen */
+    width: 100%; /* Set the backdrop width to cover the full screen */
+    height: 100%; /* Set the backdrop height to cover the full screen */
+    background: rgba(0, 0, 0, 0.7); /* Set a semi-transparent black background */
+    z-index: 1000; /* Ensure the backdrop appears below the lightbox */
+    transition: all 0.3s ease; /* Add a smooth transition for transformations */
+}
+
+.lightbox-content {
+    width: 100%; /* Set the image width to 100% of the container */
+    max-height: 60vh; /* Set the maximum height of the image */
+    object-fit: contain; /* Ensure the image retains its aspect ratio and fits within the container */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add a shadow to the image */
+    border-radius: 5px; /* Add rounded corners to the image */
+    transition: transform 0.3s ease; /* Add a smooth transition for transformations */
+}
+
+.close {
+    position: absolute; /* Position the close button absolutely within the lightbox */
+    top: 10px; /* Position the close button 10px from the top */
+    right: 10px; /* Position the close button 10px from the right */
+    color: #aaa; /* Set the color of the close button */
+    font-size: 24px; /* Set the font size of the close button */
+    font-weight: bold; /* Set the font weight of the close button */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Change the color of the close button on hover or focus */
+    text-decoration: none; /* Remove text decoration */
+    cursor: pointer; /* Ensure cursor is pointer */
 }

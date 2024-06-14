@@ -69,4 +69,24 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         infoBox.style.visibility = 'hidden'; // Hide the info box on click
     });
+
+    // Lightbox functionality using jQuery
+    $('.photo img').click(function() {
+        var src = $(this).attr('src'); // Get the source of the clicked image
+        var caption = $(this).siblings('.caption').text(); // Get the caption of the clicked image
+        $('#lightbox-image').attr('src', src); // Set the source of the lightbox image
+        $('#lightbox-caption').text(caption); // Set the caption of the lightbox image
+        $('#lightbox').css({
+            'display': 'block', // Show the lightbox
+            'transform': 'translate(-50%, -50%) scale(1)', // Center and scale the lightbox to normal size
+            'transition': 'transform 0.3s ease' // Add a smooth transition for the transformation
+        });
+        $('#backdrop').fadeIn(); // Show the backdrop with a fade-in effect
+    });
+
+    // Close lightbox
+    $('.close, #backdrop').click(function() {
+        $('#lightbox').css('transform', 'translate(-50%, -50%) scale(0.9)').fadeOut(); // Scale down and hide the lightbox
+        $('#backdrop').fadeOut(); // Hide the backdrop with a fade-out effect
+    });
 });
